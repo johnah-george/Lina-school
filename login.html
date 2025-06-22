@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eeconnnnt - Student Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-card h2 {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .login-card p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .login-card input,
+    .login-card select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .login-card button {
+      width: 100%;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-card button:hover {
+      background-color: #d62828;
+    }
+
+    .login-card small {
+      display: block;
+      margin-top: 15px;
+      color: #666;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <h2>Log in</h2>
+    <p>Student</p>
+    <input type="text" placeholder="Your Name">
+    <select>
+      <option value="">Choose Class</option>
+      <option value="student">Grade 9</option>
+      <option value="engineer">Grade 10</option>
+      <option value="engineer">Grade 11</option>
+      <option value="engineer">Grade 12</option>
+
+    </select>
+    <input type="text" placeholder="Student Solution">
+    <button>Login</button>
+    <a class="" href="">Forgot your password?</a>
+  </div>
+</body>
+</html>

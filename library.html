@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      border: 2px solid #f2f2f2;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      background: #ffe6e6;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .icon {
+      font-size: 40px;
+      margin-right: 20px;
+      color: #cc0000;
+    }
+    .label {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LIBRARY</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="#">Catalog</a>
+      <a href="#">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card"><span class="icon">📚</span><span class="label">Class Books</span></div>
+    <div class="card"><span class="icon">🔍</span><span class="label">Reference Books</span></div>
+    <div class="card"><span class="icon">📝</span><span class="label">Short Notes</span></div>
+    <div class="card"><span class="icon">👩‍🏫</span><span class="label">Teacher’s Guide</span></div>
+    <div class="card"><span class="icon">📖</span><span class="label">Educational Novels</span></div>
+  </div>
+</body>
+</html>
